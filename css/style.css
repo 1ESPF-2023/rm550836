@@ -12,7 +12,7 @@ body{
 
 .container{
   display: flex;
-  height: 60vh;
+  height: auto;
 }
 
 .banner-1{
@@ -41,4 +41,3 @@ body{
   background-color: crimson;
   color: white;
 }
-
