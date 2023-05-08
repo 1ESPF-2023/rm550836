@@ -59,10 +59,6 @@ function rotateBanner() {
 }
 rotateBanner()
 
-const botoes = document.querySelectorAll('button');
-botoes.forEach((botao) =>{
-  botao 
-})
 
 const button = document.querySelector('.conteudo button');
 const bulb = document.querySelector('.conteudo img')
@@ -77,5 +73,14 @@ button.addEventListener('click', function(){
     bulb.alt = 'Lampada apagada';
     button.textContent = 'Ligar';
   }
-
+  
 })
+
+const botoes = document.querySelectorAll('button');
+let bt = '';
+botoes.forEach((botao) =>{
+  if (botao.textContent === 'Ligar'){
+    bt = botao
+  };
+});
+console.log(bt);
